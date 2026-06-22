@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
+    <link rel="canonical" href="https://github.com/Nebojsa64/PetronicNebojsaIT2026/">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C04CB3HP0M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C04CB3HP0M');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
@@ -9,7 +18,7 @@
     <meta name="author" content="Nebojsa Petronic">
 
     <meta name="description"
-        content="Portfolio Nebojše Petronića. Web developer sa znanjem HTML, CSS i PHP tehnologija.">
+content="Portfolio Nebojše Petronića, web developera koji koristi HTML, CSS i PHP za razvoj modernih web stranica.">
 
     <meta name="keywords"
         content="portfolio programera, web developer, HTML, CSS, PHP, web razvoj">
@@ -24,7 +33,7 @@
         content="images/profile.jpg">
 
     <meta property="og:url"
-        content="https://nebojsa64.github.io/PetronicNebojsaIT2026/">
+        content="https://github.com/Nebojsa64/PetronicNebojsaIT2026">
 
     
 
@@ -32,7 +41,6 @@
 
 </head>
 <body>
-
 <nav>
     <ul>
         <li><a href="#pocetna">Početna</a></li>
@@ -53,7 +61,7 @@
          class="hero-img">
 
     <h1 class="hero-title">
-    Nebojša Petronić
+    Nebojsa Petronic - Web Developer
 </h1>
 
     <div class="hero-subtitle">
@@ -64,7 +72,7 @@
 
     <div class="about-content">
 
-        <h2>O meni</h2>
+        <h2>HTML, CSS i PHP Vještine</h2>
 
         <p>
             Ja sam Nebojša Petronić i bavim se web razvojem koristeći HTML, CSS i PHP tehnologije.
@@ -156,13 +164,42 @@
 
         <button type="submit">
             Pošalji
+</div>
+
         </button>
 
     </form>
+    <div class="social-box">
+
+    <h3>Interakcija</h3>
+
+    <div class="social-buttons">
+
+        <button onclick="like()">👍 Like <span id="likeCount">0</span></button>
+
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://nebojsa64.github.io/PetronicNebojsaIT2026/" target="_blank">
+            Facebook Share
+        </a>
+
+        <a href="https://twitter.com/intent/tweet?url=https://nebojsa64.github.io/PetronicNebojsaIT2026/" target="_blank">
+            X Share
+        </a>
+
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nebojsa64.github.io/PetronicNebojsaIT2026/" target="_blank">
+            LinkedIn Share
+        </a>
+
+    </div>
+
+</div>
 
 </section>
 
-
+ <div class="share-links">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://tvoj-sajt.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com/intent/tweet?url=https://tvoj-sajt.com" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://tvoj-sajt.com" target="_blank">LinkedIn</a>
+    </div>
 <footer>
 
     © 2026 Nebojša Petronić
@@ -183,6 +220,14 @@ elements.forEach(el => {
     el.classList.add("hidden");
     observer.observe(el);
 });
+
+let count = 0;
+
+function like(){
+    count++;
+    document.getElementById("likeCount").innerText = count;
+}
+</script>
 </script>
 </body>
 </html>
