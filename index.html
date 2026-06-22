@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C04CB3HP0M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C04CB3HP0M');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>Nebojsa Petronic | Portfolio Web Developer HTML CSS PHP</title>
+
+    <meta name="author" content="Nebojsa Petronic">
+
+    <meta name="description"
+        content="Portfolio Nebojše Petronića. Web developer sa znanjem HTML, CSS i PHP tehnologija.">
+
+    <meta name="keywords"
+        content="portfolio programera, web developer, HTML, CSS, PHP, web razvoj">
+
+    <meta property="og:title"
+        content="Portfolio Nebojse Petronica">
+
+    <meta property="og:description"
+        content="Portfolio sa projektima iz HTML, CSS i PHP tehnologija">
+
+    <meta property="og:image"
+        content="images/profile.jpg">
+
+    <meta property="og:url"
+        content="https://github.com/Nebojsa64/PetronicNebojsaIT2026">
+
+    
+
+    
+
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#pocetna">Početna</a></li>
+        <li><a href="#omeni">O meni</a></li>
+        <li><a href="#vjestine">Vještine</a></li>
+        <li><a href="#projekti">Projekti</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+</nav>
+
+
+
+
+<section class="hero" id="pocetna">
+
+    <img src="images/hero.jpg"
+         alt="Web developer workspace"
+         class="hero-img">
+
+    <h1 class="hero-title">
+    Nebojša Petronić
+</h1>
+
+    <div class="hero-subtitle">
+    Portfolio Web Developera
+</div>
+</section>
+<section id="omeni" class="about">
+
+    <div class="about-content">
+
+        <h2>O meni</h2>
+
+        <p>
+            Ja sam Nebojša Petronić i bavim se web razvojem koristeći HTML, CSS i PHP tehnologije.
+        </p>
+
+    </div>
+
+</section>
+<section id="vjestine">
+
+    <h2>Moje vještine</h2>
+
+    <div class="skills">
+
+        <div class="card">
+            <img src="images/html-logo.jpg"
+                 alt="HTML logo">
+
+            <h3>HTML</h3>
+
+            <p>Semantička struktura i SEO optimizacija.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/css-logo.jpg"
+                 alt="CSS logo">
+
+            <h3>CSS</h3>
+
+            <p>Moderan i responzivan dizajn.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/php-logo.jpg"
+                 alt="PHP logo">
+
+            <h3>PHP</h3>
+
+            <p>Dinamičke web aplikacije i rad sa podacima.</p>
+        </div>
+
+    </div>
+
+</section>
+<section id="projekti">
+
+    <h2>Moji projekti</h2>
+
+    <img src="images/project.jpg"
+         alt="Prikaz web projekta"
+         class="project-banner">
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Sistem za filmove</h3>
+            <p>PHP aplikacija za upravljanje kolekcijom filmova.</p>
+        </div>
+
+        <div class="project">
+            <h3>Web sajt za dostavu hrane</h3>
+            <p>Praktični projekat razvijen tokom stručne prakse.</p>
+        </div>
+
+        <div class="project">
+            <h3>Portfolio sajt</h3>
+            <p>Lični portfolio sa SEO optimizacijom.</p>
+        </div>
+
+    </div>
+
+</section>
+<section id="kontakt">
+
+    <h2>Kontakt</h2>
+
+    <img src="images/contact.jpg"
+         alt="Kontakt web developera"
+         class="contact-img">
+
+    <form>
+
+        <input type="text" placeholder="Ime">
+
+        <input type="email" placeholder="Email">
+
+        <textarea rows="5"
+                  placeholder="Poruka"></textarea>
+
+        <button type="submit">
+            Pošalji
+</div>
+
+        </button>
+
+    </form>
+    <div class="social-box">
+
+    <h3>Interakcija</h3>
+
+    <div class="social-buttons">
+
+        <button onclick="like()">👍 Like <span id="likeCount">0</span></button>
+
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://nebojsa64.github.io/PetronicNebojsaIT2026/" target="_blank">
+            Facebook Share
+        </a>
+
+        <a href="https://twitter.com/intent/tweet?url=https://nebojsa64.github.io/PetronicNebojsaIT2026/" target="_blank">
+            X Share
+        </a>
+
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nebojsa64.github.io/PetronicNebojsaIT2026/" target="_blank">
+            LinkedIn Share
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+ <div class="share-links">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://tvoj-sajt.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com/intent/tweet?url=https://tvoj-sajt.com" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://tvoj-sajt.com" target="_blank">LinkedIn</a>
+    </div>
+<footer>
+
+    © 2026 Nebojša Petronić
+
+</footer>
+<script>
+const elements = document.querySelectorAll("section, .hero h1, .hero-subtitle");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+elements.forEach(el => {
+    el.classList.add("hidden");
+    observer.observe(el);
+});
+
+let count = 0;
+
+function like(){
+    count++;
+    document.getElementById("likeCount").innerText = count;
+}
+</script>
+</script>
+</body>
+</html>
